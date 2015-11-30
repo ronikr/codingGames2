@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAK;EACH,gBAAgB,ECDN,SAAS;;ADIrB,IAAK;EACH,SAAS,EAAE,GAAG;;AEFhB,IAAM;EACJ,gBAAgB,EAAE,SAAS",
-"sources": ["_common.scss","_variables.scss","index.scss"],
-"names": [],
-"file": "index.css"
-}
