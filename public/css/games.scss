@@ -2,23 +2,56 @@
 @import "_variables";
 
 #listGames {
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  //align-items: center;
   justify-content: center;
 }
 
-.gameContainer {
+h1{
+  color:white;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+}
 
+.gameContainer {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   max-width: 225px;
-  border: 1px solid gray;
-  background-color: $bg-color;
-  //opacity: 0.5;
-}
-
-.gameName, .gameImage, .gameInfo {
+  border: 0px solid gray;
+  border-radius: 1%;
+  background-color: $bg-color-trans;
+  margin: 1%
 
 }
 
+.gameName, .gameInfo {
+  text-align: left;
+}
+
+.gameName {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.gameImage {
+  min-height: 225px;
+  margin: auto;
+}
+
+.gameInfo {
+
+  background-color: rgba(200,200,200,0.8);
+}
+
+#popUp {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  z-index: 50;
+  background-color: $light-acc1;
+  opacity: 0.8;
+}
