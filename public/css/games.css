@@ -62,15 +62,48 @@ li {
     transition: all .25s ease-in-out; }
 
 #listGames {
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
 
+h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center; }
+
 .gameContainer {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   max-width: 225px;
-  border: 1px solid gray;
-  background-color: #C1CBDE; }
+  border: 0px solid gray;
+  border-radius: 1%;
+  background-color: rgba(200, 200, 200, 0.7);
+  margin: 1%; }
+
+.gameName, .gameInfo {
+  text-align: left; }
+
+.gameName {
+  font-size: larger;
+  font-weight: 700; }
+
+.gameImage {
+  min-height: 225px;
+  margin: auto; }
+
+.gameInfo {
+  background-color: rgba(200, 200, 200, 0.8); }
+
+#popUp {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  z-index: 50;
+  background-color: #8CDFD6;
+  opacity: 0.8; }
 
 /*# sourceMappingURL=games.css.map */

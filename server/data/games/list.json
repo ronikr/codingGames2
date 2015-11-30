@@ -1,8 +1,8 @@
 [
   {
     "id": "minesweeper",
-    "name": "The Ultimate Minesweeper",
-    "description": "The Classic Minesweeper built purely on HTML,  JS and CSS",
+    "name": "Minesweeper",
+    "description": "Minesweeper built on HTML, JS and CSS",
     "url": "../codingGames/games/MineSweeper/index.html",
     "picture": "img/minesweeperLogo.jpg",
     "rate": 3,
@@ -12,8 +12,8 @@
   },
   {
     "id": "balloons",
-    "name": "Pop Those Balloons",
-    "description": "This is a basic point and shoot game for the whole family",
+    "name": "Pop The Balloons",
+    "description": "Basic point and shoot game for the whole fam",
     "url": "balloons.html",
     "picture": "img/pop-the-baloon.jpg",
     "rate": 3,
@@ -24,7 +24,7 @@
   {
     "id": "cars",
     "name": "Cars race",
-    "description": "Who will get to the end first? you'll just have to find out on your own.",
+    "description": "Who will get to the end first? find out soon.",
     "url": "cars.html",
     "picture": "img/cars.jpg",
     "rate": 3,
