@@ -1,12 +1,3 @@
-body {
-  background-image: url("Untitled-1.gif");
-  background-size: cover;
-
-}
-
-body {
-  direction: rtl;
-}
 
 nav {
   & ul {
@@ -14,15 +5,19 @@ nav {
     width: 100%;
     & li {
       flex-grow: 1;
-
     }
   }
 }
-
 * {
   box-sizing: border-box;
 }
 
+header, section {
+  background-color: #fff;
+  margin: 0 auto 2rem;
+  padding: 1rem 2rem 2rem;
+  width: 80%;
+}
 a {
   color: #b13131;
   text-decoration: none;
@@ -51,6 +46,14 @@ p {
   }
 }
 
+pre {
+  background-color: rgba(0,0,0,.75);
+  border-left: .5rem solid rgba(0,0,0,.5);
+  color: #FBAF5C;
+  margin: 0;
+  padding: 1rem;
+}
+
 ul {
   border-bottom: 1px solid #ccc;
   list-style: none;
@@ -68,7 +71,7 @@ li {
   transition: all .25s ease-in-out;
   &:hover {
     background-position: bottom center;
-    color: rgba(15,45,86,.45);
+    color: rgba(0,0,0,.75);
   }
   & a {
     color: #666;
@@ -78,3 +81,67 @@ li {
   }
 }
 
+.css-toggle {
+  background-color: #ddd;
+  color: #333;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    background-color: #FBAF5C;
+    color: #333;
+  }
+}
+
+#sc1 {
+  & ul {
+    display: flex;
+    width: 100%;
+    & li {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+#sc2 {
+  & ul {
+    display: flex;
+    width: 100%;
+    & li {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+#sc3 {
+  display: flex;
+  justify-content: center;
+  & ul {
+    display: flex;
+    & a {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+#fun1 {
+  & ul li {
+    border-left: 2px solid #ddd;
+    transform: skew(-15deg);
+    &:last-child {
+      border-right: 2px solid #ddd;
+    }
+    & a {
+      transform: skew(15deg);
+    }
+  }
+}
+
+#fun2 {
+  & li:hover {
+    transform: scale(1.2);
+  }
+}

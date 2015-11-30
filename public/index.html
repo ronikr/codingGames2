@@ -9,13 +9,16 @@
 
 <header>
     <!--TODO: collapsing nav menu -->
-    <button onclick="login()">Login</button>
 
-    <h1 data-i18n="CODING_GAMES">Coding Games</h1>
-
-    <ul>
-        <li><a href="games.html">Games</a></li>
-    </ul>
+    <nav>
+        <ul id="Menu">
+            <li> <a href="contactUs.html">Contact</a></li>
+            <li> <a href="games.html">Games</a></li>
+            <li> <a href="about/about.html">About</a></li>
+            <li> <a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <h1 data-i18n="CODING_GAMES"></h1>
 
 </header>
 
@@ -28,11 +31,14 @@
 </main>
 
 <footer>
-    <button onclick="changeLang('he')">HE</button>
-    <button onclick="changeLang('en')">EN</button>
-    <button onclick="changeLang('sp')">SP</button>
-
+    <div id="flags">
+        <img id="hebrew" src="css/img/Israel-Flag.png" onclick="changeLang('he')">
+        <img id="english" src="css/img/US-Flag.png" onclick="changeLang('en')">
+        <img id="russian" src="css/img/Russia-Flag.png" onclick="changeLang('ru')">
+        <img id="spanish" src="css/img/Spain-Flag.png" onclick="changeLang('esp')">
+    </div>
     <a href="adminStats.html">Admin Stats</a>
+    <button onclick="login()">Login</button>
 </footer>
 
 
@@ -42,5 +48,6 @@
 <script src="js/i18n.js"></script>
 <script src="js/login.js"></script>
 <script src="js/app.js"></script>
+<script src="css/img/test.js"></script>
 </body>
 </html>
