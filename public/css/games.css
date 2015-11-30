@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   width: auto;
   background-image: url("Untitled-4.gif");
   background-size: contain; }
@@ -9,6 +10,14 @@ header {
 body {
   direction: rtl; }
 
+=======
+  background-image: url("Untitled-1.gif");
+  background-size: cover; }
+
+body {
+  direction: rtl; }
+
+>>>>>>> 6b8df0b042d751618c4273e2cc942451fcea876d
 nav ul {
   display: flex;
   width: 100%; }
@@ -74,6 +83,11 @@ li {
   display: flex;
   flex-direction: column;
   max-width: 225px;
+<<<<<<< HEAD
   border: 1px solid gray; }
+=======
+  border: 1px solid gray;
+  background-color: #C1CBDE; }
+>>>>>>> 6b8df0b042d751618c4273e2cc942451fcea876d
 
 /*# sourceMappingURL=games.css.map */
