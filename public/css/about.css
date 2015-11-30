@@ -1,10 +1,23 @@
 body {
+<<<<<<< HEAD
+  width: auto;
+  background-image: url("Untitled-4.gif");
+  background-size: contain; }
+
+header {
+  background-image: url("url.jpg"); }
+
+body {
+  direction: rtl; }
+
+=======
   background-image: url("Untitled-1.gif");
   background-size: cover; }
 
 body {
   direction: rtl; }
 
+>>>>>>> 6b8df0b042d751618c4273e2cc942451fcea876d
 nav ul {
   display: flex;
   width: 100%; }
