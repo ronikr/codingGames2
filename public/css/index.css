@@ -1,68 +1,72 @@
-body {
-  background-image: url("Untitled-1.gif");
-  background-size: cover; }
+/*
+Error: wrong number of arguments (3 for 4) for `rgba'
+        on line 2 of _variables.scss
+        from line 1 of index.scss
 
-body {
-  direction: rtl; }
+1: @import "variables";
+2: @import "common";
+3: 
+4: main  {
+5:   background-color: chocolate;
+6:   margin-top :150px ;
+7: }
 
-nav ul {
-  display: flex;
-  width: 100%; }
-  nav ul li {
-    flex-grow: 1; }
-
-* {
-  box-sizing: border-box; }
-
-a {
-  color: #b13131;
-  text-decoration: none; }
-
-p {
-  margin-bottom: 1.5rem; }
-  h2 + p {
-    color: #757575;
-    font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
-    margin-top: -.5rem;
-    text-transform: uppercase; }
-  p code {
-    background-color: rgba(251, 175, 93, 0.25);
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    display: inline-block;
-    margin: 0 .25rem;
-    padding: 0 .25rem; }
-  p.note {
-    background-color: #C4DF9B;
-    border-left: 0.5rem solid rgba(0, 0, 0, 0.25);
-    padding: 1rem; }
-
-ul {
-  border-bottom: 1px solid #ccc;
-  list-style: none;
-  margin: 0 0 1.5rem 0;
-  padding: 0; }
-
-li {
-  background-size: 100% 200%;
-  background-position: top center;
-  color: #666;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  transition: all .25s ease-in-out; }
-  li:hover {
-    background-position: bottom center;
-    color: rgba(15, 45, 86, 0.45); }
-  li a {
-    color: #666;
-    display: block;
-    padding: 1rem 0;
-    transition: all .25s ease-in-out; }
-
-main {
-  background-color: chocolate;
-  margin-top: 150px; }
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+_variables.scss:2
+index.scss:1
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/funcall.rb:303:in `reformat_argument_error'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/funcall.rb:146:in `rescue in _perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/funcall.rb:123:in `_perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:469:in `visit_variable'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/scss:13:in `<top (required)>'
+C:/Ruby22-x64/bin/scss:23:in `load'
+C:/Ruby22-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: wrong number of arguments (3 for 4) for `rgba'\A         on line 2 of _variables.scss\A         from line 1 of index.scss\A \A 1: @import \"variables\";\A 2: @import \"common\";\A 3: \A 4: main  {\A 5:   background-color: chocolate;\A 6:   margin-top :150px ;\A 7: }"; }
