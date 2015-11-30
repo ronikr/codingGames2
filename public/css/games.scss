@@ -1,5 +1,5 @@
-@import "common";
-@import "variables";
+@import "_common";
+@import "_variables";
 
 #listGames {
   display: flex;
@@ -14,9 +14,11 @@
   flex-direction: column;
   max-width: 225px;
   border: 1px solid gray;
+  background-color: $bg-color;
+  //opacity: 0.5;
 }
 
-//.gameName, .gameImage, .gameInfo {
-//
-//}
+.gameName, .gameImage, .gameInfo {
+
+}
 
