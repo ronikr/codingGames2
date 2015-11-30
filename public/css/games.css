@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   width: auto;
   background-image: url("Untitled-4.gif");
   background-size: contain; }
@@ -10,14 +9,6 @@ header {
 body {
   direction: rtl; }
 
-=======
-  background-image: url("Untitled-1.gif");
-  background-size: cover; }
-
-body {
-  direction: rtl; }
-
->>>>>>> 6b8df0b042d751618c4273e2cc942451fcea876d
 nav ul {
   display: flex;
   width: 100%; }
@@ -91,7 +82,6 @@ h1 {
   display: flex;
   flex-direction: column;
   max-width: 225px;
-<<<<<<< HEAD
   border: 0px solid gray;
   border-radius: 1%;
   background-color: rgba(200, 200, 200, 0.7);
@@ -119,13 +109,5 @@ h1 {
   z-index: 50;
   background-color: #8CDFD6;
   opacity: 0.8; }
-=======
-<<<<<<< HEAD
-  border: 1px solid gray; }
-=======
-  border: 1px solid gray;
-  background-color: #C1CBDE; }
->>>>>>> 6b8df0b042d751618c4273e2cc942451fcea876d
->>>>>>> 16e24867dff2ba713408c40af1a61aa6733d7a99
 
 /*# sourceMappingURL=games.css.map */
