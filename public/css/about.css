@@ -1,10 +1,15 @@
 body {
+<<<<<<< HEAD
   background-image: url("Untitled-1.gif");
   background-size: cover; }
+=======
+  background-color: lightblue; }
+>>>>>>> 3b52d49fc0311749c28246f4b849d1576b2e3225
 
 body {
   direction: rtl; }
 
+<<<<<<< HEAD
 nav ul {
   display: flex;
   width: 100%; }
@@ -61,4 +66,6 @@ li {
     padding: 1rem 0;
     transition: all .25s ease-in-out; }
 
+=======
+>>>>>>> 3b52d49fc0311749c28246f4b849d1576b2e3225
 /*# sourceMappingURL=about.css.map */
