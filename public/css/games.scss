@@ -1,0 +1,21 @@
+//@import "common";
+//@import "variables";
+
+#listGames {
+  display: flex;
+  flex-wrap: wrap;
+  //align-items: center;
+  justify-content: center;
+}
+
+.gameContainer {
+
+  display: flex;
+  flex-direction: column;
+  max-width: 225px;
+  border: 1px solid gray;
+}
+
+.gameName, .gameImage, .gameInfo {
+
+}
