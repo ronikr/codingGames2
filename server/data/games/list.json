@@ -4,7 +4,7 @@
     "name": "The Ultimate Minesweeper",
     "description": "The Classic Minesweeper built purely on HTML,  JS and CSS",
     "url": "../codingGames/games/MineSweeper/index.html",
-    "picture": "img/minesweeperLogo.jpg"
+    "picture": "img/minesweeperLogo.jpg",
     "rate": 3,
     "raters": 18,
     "publishedAt": 1448693940000,
@@ -15,7 +15,7 @@
     "name": "Pop Those Balloons",
     "description": "This is a basic point and shoot game for the whole family",
     "url": "balloons.html",
-    "picture": "img/pop-the-baloon.jpg"
+    "picture": "img/pop-the-baloon.jpg",
     "rate": 3,
     "raters": 18,
     "publishedAt": 1448693940000,
@@ -26,7 +26,7 @@
     "name": "Cars race",
     "description": "Who will get to the end first? you'll just have to find out on your own.",
     "url": "cars.html",
-    "picture": "img/cars.jpg"
+    "picture": "img/cars.jpg",
     "rate": 3,
     "raters": 18,
     "publishedAt": 1448693940000,

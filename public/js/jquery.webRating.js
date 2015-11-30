@@ -24,17 +24,17 @@
 
             // image & color
             ratingCount     : 5,
-            imgSrc	    : null,
+            imgSrc	    : "img/minesweeperLogo.jpg",
             xLocation       : 0,  //in px
             yLocation       : 0,  //in px
             width	    : 0,  //in px
             height	    : 0,  //in px
 
             //CSS
-            onClass         : null,
-            offClass        : null,
-            onClassHover    : null,
-            offClassHover   : null,
+            onClass         : 'starOn',
+            offClass        : 'starOff',
+            onClassHover    : 'starOn',
+            offClassHover   : 'starOff',
             autoParentWidth : true,
 
             //cookie
