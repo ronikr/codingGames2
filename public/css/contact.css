@@ -1,23 +1,22 @@
 body {
-<<<<<<< HEAD
-  width: auto;
-  background-image: url("Untitled-4.gif");
-  background-size: contain; }
+  background-image: url("url.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 210px; }
 
 header {
-  background-image: url("url.jpg"); }
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  text-align: center;
+  font-size: 25px; }
+
+h1 {
+  color: #AD7A99;
+  margin-top: -30px;
+  font-size: 90px; }
 
 body {
   direction: rtl; }
 
-=======
-  background-image: url("Untitled-1.gif");
-  background-size: cover; }
-
-body {
-  direction: rtl; }
-
->>>>>>> 6b8df0b042d751618c4273e2cc942451fcea876d
 nav ul {
   display: flex;
   width: 100%; }
@@ -55,23 +54,23 @@ ul {
   border-bottom: 1px solid #ccc;
   list-style: none;
   margin: 0 0 1.5rem 0;
-  padding: 0; }
+  padding: 0;
+  color: #080808; }
 
 li {
   background-size: 100% 200%;
-  background-position: top center;
-  color: #666;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  transition: all .25s ease-in-out; }
-  li:hover {
-    background-position: bottom center;
-    color: rgba(15, 45, 86, 0.45); }
+  background-position: top center; }
   li a {
-    color: #666;
     display: block;
     padding: 1rem 0;
-    transition: all .25s ease-in-out; }
+    color: white;
+    background-color: #666;
+    transition: 1s; }
+  li a:hover {
+    display: block;
+    padding: 1rem 0;
+    color: #666;
+    background-color: whitesmoke;
+    transition: 1s; }
 
 /*# sourceMappingURL=contact.css.map */

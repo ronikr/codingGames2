@@ -2,17 +2,30 @@
 
 body {
 
-  width: auto;
-  background-image: url("Untitled-4.gif");
-  background-size: contain;
+  background-image: url("url.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 210px;
 
 }
 
 header{
-
-  background-image: url("url.jpg");
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  text-align: center;
+  font-size: 25px;
+  $dark-accent1: #AD7A99;
+  //background-image: url("Untitled-4.png");
 }
 
+
+h1{
+  color:  #AD7A99;
+  margin-top: -30px;
+  font-size: 90px ;
+
+
+}
 body {
   direction: rtl;
 }
@@ -30,11 +43,13 @@ nav {
 
 * {
   box-sizing: border-box;
+
 }
 
 a {
   color: #b13131;
   text-decoration: none;
+
 }
 p {
   margin-bottom: 1.5rem;
@@ -65,25 +80,30 @@ ul {
   list-style: none;
   margin: 0 0 1.5rem 0;
   padding: 0;
+  color: #080808;
+
 }
 li {
 
   background-size: 100% 200%;
   background-position: top center;
-  color: #666;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  transition: all .25s ease-in-out;
-  &:hover {
-    background-position: bottom center;
-    color: rgba(15,45,86,.45);
+   a {
+    display: block;
+    padding: 1rem 0;
+    color: white;
+    background-color:#666;
+    transition: 1s;
   }
-  & a {
-    color: #666;
+  & a:hover {
     display: block;
          padding: 1rem 0;
-    transition: all .25s ease-in-out;
+       color: #666;
+    background-color:whitesmoke;
+    transition: 1s;
+
+
+
   }
+
 }
 
