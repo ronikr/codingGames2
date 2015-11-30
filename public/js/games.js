@@ -15,7 +15,8 @@ $.getJSON('api/games', function (games) {
             '" title="'+ value.description+'">' +
             '</div>' +
                 '<div class="gameInfo">'+value.description+
-            '</div></div>'
+            '</div>' +
+            '</div>'
     })
 
     elGames.innerHTML = str;

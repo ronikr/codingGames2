@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Games</title>
     <link rel="stylesheet" href="css/games.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
 <h1>Games</h1>
@@ -11,8 +12,27 @@
 <div id="listGames">
 
 </div>
+
+<div class="br-wrapper br-theme-fontawesome-stars">
+    <select id="example">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
 <script src="lib/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/jquery.webRating.js"></script>
+<!--<script src="js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>-->
 <script src="js/games.js"></script>
+<script src="js/jquery-bar-rating/jquery.barrating.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#example').barrating({
+            theme: 'fontawesome-stars'
+        });
+    });
+</script>
+<!--<script src="js/bootstrap-star-rating-master/js/star-rating.min.js" type="text/javascript"></script>-->
 </body>
 </html>
