@@ -40,11 +40,9 @@ function gameClicked (id){
             '<div id="gameName">'+ game.name+'</div>'+
             '<div id="contributor"> By: '+ game.by+'</div>'+
             '<div id="liveSince"> Live since :'+ dateStr +'</div>'+
-            '<div id="closePopUp"> &#10006 </div>'+
+            '<div id="closePopUp" onclick="closePopUp()"> &#10006 </div>'+
             '</div>';
         elPopUp.innerHTML = str;
-
-
 
 
         //var elGames = document.querySelector("#listGames");
@@ -67,5 +65,12 @@ function gameClicked (id){
         //elGames.innerHTML = str;
 
     })
+
+}
+
+function closePopUp(){
+    console.log('in the close');
+    $("#darkenScreen").attr("display","none");
+    $('#popUp').attr("display","none");
 
 }
