@@ -1,106 +1,183 @@
 @import "variables";
+* {
+  //box-sizing: border-box;
+}
 
 body {
 
   background-image: url("url.jpg");
-
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 210px;
+  //margin-bottom: 300px;
+  display: flex;
+  //direction: rtl;
+  flex-direction: column;
+
 
 }
 
-header{
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+header {
+
   text-align: center;
   font-size: 25px;
   color: $dark-accent1;
   //background-image: url("Untitled-4.png");
+
+  h1{
+    color:  #AD7A99;
+    margin-top: -30px;
+    font-size: 90px ;
+  }
+
+  nav {
+    & ul {
+      display: flex;
+      width: 100%;
+      & li {
+        flex-grow: 1;
+
+      }
+    }
+
+
+    a {
+      color: #b13131;
+      text-decoration: none;
+
 }
 
-
-h1{
-  color:  #AD7A99;
-  margin-top: -30px;
-  font-size: 90px ;
-
-
-}
-
-nav {
-  & ul {
-    display: flex;
-    width: 100%;
-    & li {
-      flex-grow: 1;
 
     }
+    p {
+      margin-bottom: 1.5rem;
+      h2 + & {
+        color: #757575;
+        font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+        letter-spacing: 1px;
+        margin-top: -.5rem;
+        text-transform: uppercase;
+      }
+      & code {
+        background-color: rgba(251,175,93,.25);
+        border: 1px solid rgba(0,0,0,.25);
+        border-radius: 4px;
+        display: inline-block;
+        margin: 0 .25rem;
+        padding: 0 .25rem;
+      }
+      &.note {
+        background-color: #C4DF9B;
+        border-left: .5rem solid rgba(0,0,0,.25);
+        padding: 1rem;
+      }
+    }
+
+    ul {
+      border-bottom: 1px solid #ccc;
+      list-style: none;
+      margin: 0 0 1.5rem 0;
+      padding: 0;
+      color: #080808;
+
+      li {
+
+        background-size: 100% 200%;
+        background-position: top center;
+        a {
+          display: block;
+          padding: 1rem 0;
+          color: white;
+          background-color:#666;
+          transition: 1s;
+        }
+        & a:hover {
+          display: block;
+          padding: 1rem 0;
+          color: #666;
+          background-color:whitesmoke;
+          transition: 1s;
+
+
+
+        }
+
+      }
+    }
+  }
+
+
+
+
+
+
+main{
+  .parent {
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+    transition: 3s;
+    -moz-box-pack: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .child {
+
+    font-size: 25px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: $dark-accent1;
+
+
+
+
+  }
+
+  .child-1{
+
+
+    background-image: url("img/5554ade5f96da6ad64434a9d_hearicon.png");
+      background-size: cover;
+    $dark-accent1: #AD7A99;
+    &:hover{background-color: whitesmoke}
+
+
+  }
+  .child-2{
+    background-image: url("img/2721.png");
+    background-size: cover;
+
+    $dark-accent1: #AD7A99;
+    &:hover{background-color: whitesmoke }
+
+  }
+  .child-3{
+    background-image: url("img/smiley-face-clip-art-black-and-white-018721-glossy-black-icon-symbols-shapes-smiley-face1.png");
+    background-size: cover;
+    $dark-accent1: #AD7A99;
+    &:hover{background-color:whitesmoke}
+
+  }
+  .child-4{
+    background-image: url("img/time.png");
+    background-size: cover;
+    $dark-accent1: #AD7A99;
+    &:hover{background-color: whitesmoke}
+
   }
 }
 
-* {
-  box-sizing: border-box;
+footer{
 
 }
 
-a {
-  color: #b13131;
-  text-decoration: none;
-
-}
-p {
-  margin-bottom: 1.5rem;
-  h2 + & {
-    color: #757575;
-    font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
-    margin-top: -.5rem;
-    text-transform: uppercase;
-  }
-  & code {
-    background-color: rgba(251,175,93,.25);
-    border: 1px solid rgba(0,0,0,.25);
-    border-radius: 4px;
-    display: inline-block;
-    margin: 0 .25rem;
-    padding: 0 .25rem;
-  }
-  &.note {
-    background-color: #C4DF9B;
-    border-left: .5rem solid rgba(0,0,0,.25);
-    padding: 1rem;
-  }
-}
-
-ul {
-  border-bottom: 1px solid #ccc;
-  list-style: none;
-  margin: 0 0 1.5rem 0;
-  padding: 0;
-  color: #080808;
-
-}
-li {
-
-  background-size: 100% 200%;
-  background-position: top center;
-   a {
-    display: block;
-    padding: 1rem 0;
-    color: white;
-    background-color:#666;
-    transition: 1s;
-  }
-  & a:hover {
-    display: block;
-         padding: 1rem 0;
-       color: #666;
-    background-color:whitesmoke;
-    transition: 1s;
-
-
-
-  }
-
-}
 
