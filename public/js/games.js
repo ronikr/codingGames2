@@ -41,7 +41,9 @@ function gameClicked (id){
             '<div id="contributor"> By: '+ game.by+'</div>'+
             '<div id="liveSince"> Live since :'+ dateStr +'</div>'+
             '<div id="closePopUp" onclick="closePopUp()"> &#10006 </div>'+
-            '</div>';
+            '</div>'+
+            '<div class="imageContainer"> <img src ="' + game.picture + '">'
+            '</div>'
         elPopUp.innerHTML = str;
 
 
@@ -70,7 +72,7 @@ function gameClicked (id){
 
 function closePopUp(){
     console.log('in the close');
-    $("#darkenScreen").attr("display","none");
-    $('#popUp').attr("display","none");
+    $(".darkenScreen").css("display","none");
+    $('#popUp').css("display","none");
 
 }
