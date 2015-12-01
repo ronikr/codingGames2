@@ -7,15 +7,13 @@ body {
 header {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+  color: #AD7A99; }
 
 h1 {
   color: #AD7A99;
   margin-top: -30px;
   font-size: 90px; }
-
-body {
-  direction: rtl; }
 
 nav ul {
   display: flex;
