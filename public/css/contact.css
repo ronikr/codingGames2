@@ -1,0 +1,104 @@
+body {
+  background-image: url("url.jpg");
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  text-align: center;
+  font-size: 25px; }
+  header h1 {
+    color: #AD7A99;
+    margin-top: -30px;
+    font-size: 90px; }
+  header nav ul {
+    display: flex;
+    width: 100%; }
+    header nav ul li {
+      flex-grow: 1; }
+  header nav a {
+    color: #b13131;
+    text-decoration: none; }
+  header nav p {
+    margin-bottom: 1.5rem; }
+    h2 + header nav p {
+      color: #757575;
+      font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+      letter-spacing: 1px;
+      margin-top: -.5rem;
+      text-transform: uppercase; }
+    header nav p code {
+      background-color: rgba(251, 175, 93, 0.25);
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      display: inline-block;
+      margin: 0 .25rem;
+      padding: 0 .25rem; }
+    header nav p.note {
+      background-color: #C4DF9B;
+      border-left: 0.5rem solid rgba(0, 0, 0, 0.25);
+      padding: 1rem; }
+  header nav ul {
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    color: #080808; }
+    header nav ul li {
+      background-size: 100% 200%;
+      background-position: top center; }
+      header nav ul li a {
+        display: block;
+        padding: 1rem 0;
+        color: white;
+        background-color: #666;
+        transition: 1s; }
+      header nav ul li a:hover {
+        display: block;
+        padding: 1rem 0;
+        color: #666;
+        background-color: whitesmoke;
+        transition: 1s; }
+
+main .parent {
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  transition: 3s;
+  -moz-box-pack: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+main .child {
+  font-size: 25px;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  background-color: #AD7A99; }
+main .child-1 {
+  background-image: url("img/5554ade5f96da6ad64434a9d_hearicon.png");
+  background-size: cover; }
+  main .child-1:hover {
+    background-color: whitesmoke; }
+main .child-2 {
+  background-image: url("img/2721.png");
+  background-size: cover; }
+  main .child-2:hover {
+    background-color: whitesmoke; }
+main .child-3 {
+  background-image: url("img/smiley-face-clip-art-black-and-white-018721-glossy-black-icon-symbols-shapes-smiley-face1.png");
+  background-size: cover; }
+  main .child-3:hover {
+    background-color: whitesmoke; }
+main .child-4 {
+  background-image: url("img/time.png");
+  background-size: cover; }
+  main .child-4:hover {
+    background-color: whitesmoke; }
+
+/*# sourceMappingURL=contact.css.map */
