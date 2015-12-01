@@ -8,8 +8,21 @@
   justify-content: center;
 }
 
-h1{
-  color:white;
+.darkenScreen {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.8;
+  display: none;
+  z-index: 3;
+}
+
+h1 {
+  //color: white;
   font-weight: bolder;
   font-size: 3em;
   text-align: center;
@@ -43,7 +56,7 @@ h1{
 
 .gameInfo {
 
-  background-color: rgba(200,200,200,0.8);
+  background-color: rgba(200, 200, 200, 0.8);
 }
 
 #popUp {
@@ -53,5 +66,22 @@ h1{
   width: 80%;
   z-index: 50;
   background-color: $light-acc1;
-  opacity: 0.8;
+  display: none;
+  //display: flex;
+  flex-direction: column;
+
+  .topRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    #gameName {
+    }
+    #contributor {
+    }
+    #liveSince {
+    }
+    #closePopUp {
+    }
+  }
 }

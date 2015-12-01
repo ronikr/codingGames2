@@ -23,7 +23,7 @@ header {
 
   text-align: center;
   font-size: 25px;
-  $dark-accent1: #AD7A99;
+  color: $dark-accent1;
   //background-image: url("Untitled-4.png");
 
   h1{
@@ -42,9 +42,13 @@ header {
       }
     }
 
+<<<<<<< HEAD
     a {
       color: #b13131;
       text-decoration: none;
+=======
+}
+>>>>>>> 581a2dae1f4812a32c9c8ce2b7a0bd312201b892
 
     }
     p {

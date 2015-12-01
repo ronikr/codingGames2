@@ -1,5 +1,6 @@
 body {
   background-image: url("url.jpg");
+<<<<<<< HEAD
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,6 +101,78 @@ main .child-4 {
   background-size: cover; }
   main .child-4:hover {
     background-color: whitesmoke; }
+=======
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 210px; }
+
+header {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  text-align: center;
+  font-size: 25px;
+  color: #AD7A99; }
+
+h1 {
+  color: #AD7A99;
+  margin-top: -30px;
+  font-size: 90px; }
+
+nav ul {
+  display: flex;
+  width: 100%; }
+  nav ul li {
+    flex-grow: 1; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #b13131;
+  text-decoration: none; }
+
+p {
+  margin-bottom: 1.5rem; }
+  h2 + p {
+    color: #757575;
+    font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: -.5rem;
+    text-transform: uppercase; }
+  p code {
+    background-color: rgba(251, 175, 93, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 .25rem;
+    padding: 0 .25rem; }
+  p.note {
+    background-color: #C4DF9B;
+    border-left: 0.5rem solid rgba(0, 0, 0, 0.25);
+    padding: 1rem; }
+
+ul {
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  color: #080808; }
+
+li {
+  background-size: 100% 200%;
+  background-position: top center; }
+  li a {
+    display: block;
+    padding: 1rem 0;
+    color: white;
+    background-color: #666;
+    transition: 1s; }
+  li a:hover {
+    display: block;
+    padding: 1rem 0;
+    color: #666;
+    background-color: whitesmoke;
+    transition: 1s; }
+>>>>>>> 581a2dae1f4812a32c9c8ce2b7a0bd312201b892
 
 #listGames {
   z-index: 1;
@@ -107,8 +180,23 @@ main .child-4 {
   flex-wrap: wrap;
   justify-content: center; }
 
+<<<<<<< HEAD
 h1 {
   color: white;
+=======
+.darkenScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.8;
+  display: none;
+  z-index: 3; }
+
+h1 {
+>>>>>>> 581a2dae1f4812a32c9c8ce2b7a0bd312201b892
   font-weight: bolder;
   font-size: 3em;
   text-align: center; }
@@ -144,6 +232,15 @@ h1 {
   width: 80%;
   z-index: 50;
   background-color: #8CDFD6;
+<<<<<<< HEAD
   opacity: 0.8; }
+=======
+  display: none;
+  flex-direction: column; }
+  #popUp .topRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+>>>>>>> 581a2dae1f4812a32c9c8ce2b7a0bd312201b892
 
 /*# sourceMappingURL=games.css.map */
