@@ -45,11 +45,29 @@ function gameClicked(id) {
             '<div class="imageContainer"> <img src ="' + game.picture + '">' +
             '</div>' +
             '<div class="gameInfo"><div class="description"> ' + game.description + '</div>' +
-            '<div class="rating"> Rating: ' + game.rate + '</div></div>' +
-            '<div class="checkItOut"><a href="'+ game.url+'" > Check it Out !</a></div>'
+            '<div > Rating: </div>' +
+            '<div class="rating" data-rate-value=6></div></div>' +
+            '<div class="checkItOut"><a href="' + game.url + '" > Check it Out !</a></div>'
         elPopUp.innerHTML = str;
 
+        var options = {
+            max_value: 5,
+            step_size: 1,
+            change_once: true,
+            initial_value: game.rate
+            //symbols: {},
+            //selected_symbol_type: 'utf8_star', // Must be a key from symbols
+            //convert_to_utf8: false,
+            //cursor: 'default',
+            //readonly: false,
+            //ajax_method: 'POST',
+            //url: 'api/games/'
+        }
+        $(".rating").rate(options);
+        //$(".rating").rate("setValue");
+
     })
+
 
 }
 
@@ -59,3 +77,4 @@ function closePopUp() {
     $('#popUp').css("display", "none");
 
 }
+

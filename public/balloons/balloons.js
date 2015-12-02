@@ -60,37 +60,11 @@ function initGame(){
 
 initGame();
 
-function startRace() {
-    if (gIsRaceOn) return;
-
-    gIsRaceOn = true;
-    var elCars = document.querySelectorAll('.car');
-
-    gIntervalCars = setInterval( function() {
-
-        for (var i=0; i< elCars.length; i++){
-            var elCar = elCars[i];
-            var car = gCars[i];
-            car.left += car.speed;
-            elCar.style.left = car.left +'px';
-
-            if (car.left >= ROAD_END) {
-                pauseRace();
-                console.log('Winner: ', car);
-            }
-
-
-        }
-
-    },100);
-
-}
-
 function startGame() {
 
     if (gIsGameOn) return;
     gIsGameOn = true;
-
+    sendGameStartedJSON('balloons','played');
     var elBalloons  = document.querySelectorAll('.balloon');
     gIntervalBalloons = setInterval(function () {
         // move all balloons

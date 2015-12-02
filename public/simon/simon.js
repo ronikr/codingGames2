@@ -33,6 +33,7 @@ function extendSeq(seq) {
 
 
 function playSeq() {
+    sendGameStartedJSON('simon','played');
     var elBtnPlay = document.querySelector(".btn-play");
     elBtnPlay.style.visibility = 'hidden';
     var elStatus = document.querySelector(".gameStatus strong");

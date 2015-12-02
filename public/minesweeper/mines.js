@@ -131,8 +131,12 @@ function flagCell(elCell) {
 }
 
 function cellClicked(elCell, i, j) {
-    if (!gameStarted)startTimer();
-    gameStarted = true;
+    if (!gameStarted) {
+        startTimer();
+        sendGameStartedJSON('minesweeper','played');
+        gameStarted = true;
+    }
+
     if (gBoard[i][j] === MINE) {
         handleMineClicked(elCell);
         return;
@@ -253,6 +257,8 @@ function handleMineClicked(elCell) {
     elPage.classList.add("htmlEnd");
     endGame();
 }
+
+
 
 // MAIN
 initGame();

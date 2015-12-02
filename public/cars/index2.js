@@ -53,7 +53,7 @@ function initGame() {
 
 function startRace() {
     if (gIsRaceOn) return;
-
+    sendGameStartedJSON('cars','played');
     gIsRaceOn = true;
     var elCars = document.querySelectorAll('.car');
 

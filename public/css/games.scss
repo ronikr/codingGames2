@@ -100,11 +100,16 @@ h1 {
   .gameInfo{
     display: flex;
     justify-content: space-around ;
+    flex-wrap: wrap;
 
     .description {
     }
-    .rating {}
+    .rating {
+      display: inline-block;
+    }
 
   }
-  .checkItOut {}
+  .checkItOut {
+    clear: both;
+  }
 }
