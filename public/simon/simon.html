@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="simon.css">
+    <title>Simon</title>
+</head>
+<body>
+<div class="gameBoard">
+    <div class="note-e" onclick="noteClicked('e')"></div>
+    <div class="note-g" onclick="noteClicked('g')"></div>
+    <div class="note-a" onclick="noteClicked('a')"></div>
+    <div class="note-b" onclick="noteClicked('b')"></div>
+    <div class="note-d" onclick="noteClicked('d')"></div>
+</div>
+<div class="gameControls">
+    <div class="messages">
+        <div>Status:
+            <span class="gameStatus"><strong></strong></span>
+        </div>
+        <div> Played this turn:
+            <span class="notesPlayed"></span>
+        </div>
+        <div>Max notes played:
+            <span class="maxPlayed"></span>
+        </div>
+    </div>
+    <button class="btn-play" onclick="playSeq()">PLAY</button>
+    <div class="youLose"></div>
+</div>
+<script src="utils.js"></script>
+<script src="simon.js"></script>
+</body>
+</html>

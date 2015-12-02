@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixins";
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: courier;
+}
+
+.gameBoard {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.note-e {
+  @include round-button;
+}
+
+.note-g{
+  @include round-button($red);
+}
+
+.note-a {
+  @include round-button($green);
+}
+
+.note-b {
+  @include round-button($yellow);
+}
+
+.note-d {
+  @include round-button($pink);
+
+}
+
+
+.gameControls {
+  display: flex;
+  justify-content:  space-around;
+}
+
+.gameStatus{
+  display: inline;
+}
+.btn-play {
+  @include round-button($gray);
+  border-radius: 20%;
+  outline: 0;
+
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.youLose {
+  width: 30%;
+}
+
+.youLose  {
+  color: $red;
+  font-size: 3.4em;
+  font-weight: bolder;
+}

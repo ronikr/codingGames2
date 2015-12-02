@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="title">Minesweeper
+<div class="chooseLevel">
+    <br>
+    <button onclick="setGameLevel(4,3)">Beginner</button>
+    <button onclick="setGameLevel(7,7)">Intermediate</button>
+    <button onclick="setGameLevel(9,9)">Advanced</button>
+    <br>
+</div>
+</div>
+<div class="dashBoard">
+    <table class="topRow">
+        <td class="timer"></td>
+        <td class="reset">
+            <button onclick="reset()">Reset</button>
+        </td>
+        <td class="mineCounter"></td>
+    </table>
+    <table class="tableGame"></table>
+</div>
+<div class="messages"></div>
+<div class="hallOfFame"></div>
+<script src="utils.js"></script>
+<script src="mines.js"></script>
+</body>
+</html>
